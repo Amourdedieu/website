@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Donation - Amour De Dieu</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="main-li"><a href="index.html"><P>Amour De Dieu</P></a></li>
+            <li class="hideonMobile"><a href="index.html">About</a></li>
+            <li class="hideonMobile"><a href="http://paypal.me/AssoAmourDeDieu">Donation</a></li>
+            <li class="hideonMobile"><a href="index.html#contact">Contact</a></li>
+            <li class="hideonMobile"><a href="member.html">Membership</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></></a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="http://paypal.me/AssoAmourDeDieu">Donation</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="member.html">Membership</a></li>
+        </ul>
+    </nav>
+    
+    <section class="mem">
+
+        <header class="header-mem">
+            <h1 class="title-mem">
+              <span class="highlight-mem">Membre</span>
+            </h1>
+          </header>
+
+
+       <div class="form-container">
+            <form class="info-form" action="https://formsubmit.co/associationamourdedieu2025@gmail.com" method="POST">
+
+                <!-- Formsubmit hidden fields -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Nouvelle demande d'adhésion">
+                <input type="hidden" name="_next" value="https://krishna171826.github.io/Amour_De_Dieu/merci.html">
+
+                <div class="row">
+                    <label>Nom :</label>
+                    <input type="text" name="nom" required>
+
+                    <label>Prénom :</label>
+                    <input type="text" name="prenom" required>
+                </div>
+
+                <div class="row">
+                    <label>Numéro :</label>
+                    <input type="text" name="number" required>
+
+                    <label>E-mail :</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="row">
+                    <label>Date de naissance :</label>
+                    <input type="text" name="date_naissance" placeholder="JJ/MM/AAAA" required>
+
+                    <label></label>
+                    <div></div>
+                </div>
+
+                <div class="row">
+                    <label>Adresse :</label>
+                    <input type="text" name="address" required>
+
+                    <label>Code-postal :</label>
+                    <input type="text" name="code_postal" required>
+                </div>
+
+                <div class="row">
+                    <label>Ville :</label>
+                    <input type="text" name="city" required>
+                </div>
+
+                <div class="">
+                    <label>Choix du statut de membre :</label>
+
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="statut_membre" value="active" required>
+                            Membre actif (participation aux activités)
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="statut_membre" value="bienfaiteur" required>
+                            Membre bienfaiteur (soutien financier sans engagement)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row submit-row">
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </div>
+
+            </form>
+        </div>
+        
+          
+
+    </section>
+    
+
+</body>
+</html>
