@@ -1249,4 +1249,165 @@ textarea {
   }
 }
 
+
+
+
+
+
+ 
+/*-------------------------------------------- Donation ------------------------------------------*/
+
+.donation-section {
+  background-color: #00154f;
+  color: white;
+  padding: 4rem 12rem;
+  min-height: 100vh;
+}
+
+ .header-don {
+    text-align: center;
+    margin-bottom: 2rem;
+ 
+  }
   
+  .title-don {
+    font-weight: 800;
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--backgrond-color);
+    justify-content: center;
+    position: relative;
+    padding-top: 4rem;
+  }
+  
+
+/* --- PAYPAL --- */
+.paypal-box {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+}
+
+.paypal-box h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.paypal-box button {
+  background-color: var(--hightlight-color);
+  color: #001A64;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.paypal-box button:hover {
+  opacity: 0.85;
+}
+
+/* --- BANQUE (RIB) --- */
+.rib-box {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.rib-row-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+
+.rib-row {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.rib-que {
+  font-weight: bold;
+}
+
+.rib-ans {
+  color: var(--hightlight-color);
+}
+
+/* ------------------------------------------------ */
+/*            📱 RESPONSIVE MOBILE                  */
+/* ------------------------------------------------ */
+
+@media (max-width: 768px) {
+  .donation-section {
+        padding: 4rem 2rem;
+        padding-top: 1rem;
+  }
+
+  .header-don .title-don {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .paypal-box {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .paypal-box h1 {
+    font-size: 1.6rem;
+  }
+
+  .paypal-box button {
+    max-width: 20rem;
+    min-width: 10rem;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+
+  .rib-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .rib-box h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .rib-row-box {
+    padding: 1.5rem;
+  }
+
+  .rib-row {
+    flex-direction: row;
+    gap: 0.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+
