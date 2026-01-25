@@ -1412,3 +1412,126 @@ h1 {
 }
 
 
+
+
+.maraude {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.maraude h1 {
+  color: #0b1f6a;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.mois-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mois {
+  border: 2px solid #0b1f6a;
+  border-radius: 15px;
+  width: 280px;
+  overflow: hidden;
+  background: white;
+}
+
+.mois-title {
+  background: #0b1f6a;
+  color: #ffd84d;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.jours,
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.jours span {
+  background: #0b1f6a;
+  color: #ffd84d;
+  padding: 6px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dates span {
+  border: 1px solid #333;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+}
+
+.heart::after {
+  content: "❤";
+  color: red;
+  font-size: 26px;
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+}
+
+
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+
+  .maraude h1 {
+    font-size: 28px;
+  }
+
+  .mois-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .mois {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .mois-title {
+    font-size: 22px;
+    padding: 12px;
+  }
+
+  .jours span,
+  .dates span {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .heart::after {
+    font-size: 22px;
+  }
+}
+
+/* 📱 Très petit écran */
+@media (max-width: 400px) {
+
+  .maraude h1 {
+    font-size: 24px;
+  }
+
+  .mois {
+    max-width: 300px;
+  }
+
+  .jours span,
+  .dates span {
+    font-size: 13px;
+  }
+}
+
+
+
